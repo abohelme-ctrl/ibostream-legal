@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IBO Stream Privacy Policy - سياسة الخصوصية لتطبيق IBO Stream" />
+  <title>Privacy Policy | سياسة الخصوصية — IBO Stream</title>
+  <style>
+    :root {
+      --orange: #FF6B35;
+      --dark:   #0A0E27;
+      --card:   #1C2340;
+      --text:   #E8ECF0;
+      --sub:    #A0A8C0;
+      --border: rgba(255,255,255,0.08);
+      --blue:   #4A90E2;
+      --green:  #10B981;
+      --warn:   #F59E0B;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', 'Arial', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ── LANG TOGGLE ── */
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,14,39,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+    }
+    .lang-bar .brand { font-size: 16px; font-weight: 700; color: var(--orange); }
+    .lang-btns { display: flex; gap: 8px; }
+    .lang-btn {
+      padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border);
+      background: transparent; color: var(--sub); cursor: pointer;
+      font-size: 13px; font-weight: 600; transition: all .2s;
+    }
+    .lang-btn.active { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0A0E27 0%, #151B3B 60%, #1C2340 100%);
+      text-align: center;
+      padding: 60px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-icon {
+      width: 80px; height: 80px; border-radius: 20px;
+      background: rgba(255,107,53,0.15);
+      border: 2px solid var(--orange);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 36px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .hero .app-name { color: var(--orange); }
+    .hero p { color: var(--sub); font-size: 14px; margin-top: 6px; }
+    .hero .badge {
+      display: inline-block; margin-top: 16px;
+      background: rgba(16,185,129,0.12); border: 1px solid var(--green);
+      color: var(--green); border-radius: 20px; padding: 4px 14px; font-size: 13px;
+    }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--card); border-radius: 16px;
+      border: 1px solid var(--border); padding: 24px; margin-bottom: 32px;
+    }
+    .toc-title { font-size: 14px; font-weight: 700; color: var(--orange); margin-bottom: 14px; }
+    .toc ol { padding-right: 20px; padding-left: 0; }
+    [lang="en"] .toc ol { padding-left: 20px; padding-right: 0; }
+    .toc li { margin-bottom: 8px; }
+    .toc a { color: var(--blue); text-decoration: none; font-size: 14px; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── SECTIONS ── */
+    .section {
+      background: var(--card); border-radius: 16px;
+      border: 1px solid var(--border); padding: 24px;
+      margin-bottom: 16px; scroll-margin-top: 80px;
+    }
+    .section-header {
+      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px;
+    }
+    .section-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .section-title { font-size: 16px; font-weight: 700; color: var(--orange); }
+    .divider { height: 1px; background: var(--border); margin: 12px 0; }
+    .section-body { color: var(--sub); font-size: 14px; line-height: 1.8; }
+    .section-body ul, .section-body ol {
+      padding-right: 20px; padding-left: 0; margin-top: 8px;
+    }
+    [lang="en"] .section-body ul,
+    [lang="en"] .section-body ol { padding-left: 20px; padding-right: 0; }
+    .section-body li { margin-bottom: 6px; }
+    .section-body strong { color: var(--text); }
+
+    /* ── HIGHLIGHT BOX ── */
+    .highlight {
+      border-radius: 10px; padding: 14px 16px; margin: 12px 0; font-size: 13px;
+    }
+    .highlight.green { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); color: #6ee7b7; }
+    .highlight.blue  { background: rgba(74,144,226,0.08); border: 1px solid rgba(74,144,226,0.3); color: #93c5fd; }
+    .highlight.warn  { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.3); color: #fcd34d; }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: linear-gradient(135deg, rgba(255,107,53,0.1), rgba(74,144,226,0.1));
+      border: 1px solid rgba(255,107,53,0.3); border-radius: 16px;
+      padding: 24px; text-align: center; margin-top: 32px;
+    }
+    .contact-box h3 { font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .contact-box a { color: var(--orange); text-decoration: none; font-weight: 600; }
+    .contact-box p { color: var(--sub); font-size: 13px; margin-top: 6px; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center; padding: 32px 24px;
+      border-top: 1px solid var(--border); color: var(--sub); font-size: 13px;
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+
+    /* ── LTR switch ── */
+    [lang="en"] { direction: ltr; text-align: left; }
+    [lang="en"] .toc ol { padding-left: 20px; padding-right: 0; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .hero { padding: 40px 16px 32px; }
+      .hero h1 { font-size: 22px; }
+      .container { padding: 20px 16px 60px; }
+      .section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── LANG BAR ── -->
+<div class="lang-bar">
+  <span class="brand">📺 IBO Stream</span>
+  <div class="lang-btns">
+    <button class="lang-btn active" onclick="setLang('ar')">🇸🇦 العربية</button>
+    <button class="lang-btn"       onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+</div>
+
+<!-- ── ARABIC VERSION ── -->
+<div id="ar" lang="ar" dir="rtl">
+
+  <div class="hero">
+    <div class="hero-icon">🔏</div>
+    <h1>سياسة الخصوصية<br><span class="app-name">IBO Stream</span></h1>
+    <p>نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية</p>
+    <span class="badge">آخر تحديث: مارس ٢٠٢٥</span>
+  </div>
+
+  <div class="container">
+
+    <!-- TOC -->
+    <div class="toc">
+      <div class="toc-title">📋 فهرس المحتويات</div>
+      <ol>
+        <li><a href="#ar-1">البيانات التي نجمعها</a></li>
+        <li><a href="#ar-2">كيف نستخدم بياناتك</a></li>
+        <li><a href="#ar-3">تخزين البيانات وأمانها</a></li>
+        <li><a href="#ar-4">مشاركة البيانات مع أطراف ثالثة</a></li>
+        <li><a href="#ar-5">خصوصية الأطفال</a></li>
+        <li><a href="#ar-6">حقوقك كمستخدم</a></li>
+        <li><a href="#ar-7">ملفات تعريف الارتباط (Cookies)</a></li>
+        <li><a href="#ar-8">التغييرات على هذه السياسة</a></li>
+        <li><a href="#ar-9">التواصل معنا</a></li>
+      </ol>
+    </div>
+
+    <!-- مقدمة -->
+    <div class="highlight blue">
+      IBO Stream هو تطبيق مشغّل وسائط يدعم بروتوكول Xtream وملفات M3U. لا يوفر التطبيق أي محتوى مدمج.
+      هذه السياسة تشرح كيف نجمع بياناتك ونستخدمها ونحميها.
+    </div>
+
+    <!-- 1 -->
+    <div class="section" id="ar-1">
+      <div class="section-header">
+        <span class="section-icon">📊</span>
+        <span class="section-title">١. البيانات التي نجمعها</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>نجمع الحد الأدنى الضروري من البيانات فقط:</p>
+        <ul>
+          <li><strong>معرّف الجهاز (Device ID):</strong> يُولَّد تلقائياً عند تثبيت التطبيق، ويُستخدم لأغراض التحقق من الاشتراك فقط. لا يحتوي على أي معلومات شخصية.</li>
+          <li><strong>رقم الهاتف (اختياري):</strong> يُدخله المستخدم طوعاً لربط حسابه بالاشتراك وتسهيل الاسترداد.</li>
+          <li><strong>تاريخ المشاهدة:</strong> مخزّن محلياً على جهازك فقط — لا يُرسَل لخوادمنا إطلاقاً.</li>
+          <li><strong>قوائم التشغيل (Playlists):</strong> مخزّنة محلياً على جهازك فقط — لا تُرفَع لخوادمنا.</li>
+        </ul>
+        <div class="highlight green">
+          ✅ لا نجمع: الاسم، البريد الإلكتروني، الموقع الجغرافي، جهات الاتصال، أو أي بيانات حساسة أخرى.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="ar-2">
+      <div class="section-header">
+        <span class="section-icon">🔍</span>
+        <span class="section-title">٢. كيف نستخدم بياناتك</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>نستخدم البيانات المجمّعة للأغراض التالية فقط:</p>
+        <ul>
+          <li><strong>معرّف الجهاز:</strong> للتحقق من صحة الاشتراك، منع الاستخدام غير المصرح به، وتحديد عدد الأجهزة المرتبطة بكل اشتراك.</li>
+          <li><strong>رقم الهاتف:</strong> للتواصل المتعلق بالاشتراك فقط، وتفعيل الحساب عند تغيير الجهاز.</li>
+        </ul>
+        <div class="highlight warn">
+          ⚠️ لا نستخدم بياناتك لأغراض تسويقية أو إعلانية أو تحليلية مطلقاً.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="ar-3">
+      <div class="section-header">
+        <span class="section-icon">🔒</span>
+        <span class="section-title">٣. تخزين البيانات وأمانها</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <ul>
+          <li><strong>بيانات محلية</strong> (تاريخ المشاهدة، قوائم التشغيل): مخزّنة على جهازك باستخدام تخزين آمن ولا تغادر جهازك أبداً.</li>
+          <li><strong>بيانات الاشتراك</strong> (معرّف الجهاز، رقم الهاتف): مخزّنة على خوادمنا المؤمّنة بـ HTTPS ومشفّرة.</li>
+          <li>نحتفظ ببياناتك طالما حسابك نشط. يمكنك طلب حذفها في أي وقت.</li>
+          <li>في حال إلغاء تثبيت التطبيق، تُحذف جميع البيانات المحلية تلقائياً.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="ar-4">
+      <div class="section-header">
+        <span class="section-icon">🤝</span>
+        <span class="section-title">٤. مشاركة البيانات مع أطراف ثالثة</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <div class="highlight green">
+          ✅ لا نبيع ولا نؤجر ولا نشارك بياناتك الشخصية مع أي طرف ثالث لأي غرض تجاري.
+        </div>
+        <p style="margin-top:12px;">نستخدم الخدمات التقنية التالية كجزء من البنية التحتية للتطبيق:</p>
+        <ul>
+          <li><strong>Expo / React Native:</strong> إطار عمل التطبيق — لا يجمع بيانات مستخدمين من تطبيقنا.</li>
+          <li><strong>EAS (Expo Application Services):</strong> لإرسال التحديثات عبر الهواء — لا يجمع بيانات شخصية.</li>
+          <li><strong>خوادمنا الخاصة:</strong> للتحقق من الاشتراك فقط — مؤمّنة ومشفّرة.</li>
+        </ul>
+        <p style="margin-top:12px;">قد نُفصح عن بياناتك فقط إذا طُلب منا ذلك بموجب القانون أو أمر قضائي.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="ar-5">
+      <div class="section-header">
+        <span class="section-icon">👶</span>
+        <span class="section-title">٥. خصوصية الأطفال</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>
+          لا يستهدف تطبيقنا الأطفال دون سن 13 عاماً ولا نجمع بياناتهم عن قصد.
+          إذا كنت والداً أو وصياً وتعتقد أن طفلك قدّم بيانات شخصية لنا، يُرجى التواصل معنا فوراً
+          على <strong>privacy@ibostream.app</strong> وسنحذف هذه البيانات خلال 48 ساعة.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="ar-6">
+      <div class="section-header">
+        <span class="section-icon">✅</span>
+        <span class="section-title">٦. حقوقك كمستخدم</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>يحق لك في أي وقت:</p>
+        <ul>
+          <li><strong>الاطلاع:</strong> معرفة البيانات الشخصية المحفوظة لديك.</li>
+          <li><strong>التصحيح:</strong> طلب تعديل بياناتك غير الدقيقة.</li>
+          <li><strong>الحذف:</strong> طلب مسح جميع بياناتك الشخصية نهائياً.</li>
+          <li><strong>الاعتراض:</strong> الاعتراض على أي معالجة لبياناتك.</li>
+          <li><strong>النقل:</strong> استلام بياناتك بصيغة قابلة للقراءة آلياً.</li>
+        </ul>
+        <p style="margin-top:10px;">لممارسة أي من هذه الحقوق تواصل معنا على: <strong>privacy@ibostream.app</strong></p>
+        <p>نلتزم بالرد خلال <strong>48 ساعة عمل</strong>.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="ar-7">
+      <div class="section-header">
+        <span class="section-icon">🍪</span>
+        <span class="section-title">٧. ملفات تعريف الارتباط (Cookies)</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <div class="highlight green">
+          ✅ التطبيق لا يستخدم Cookies أو تقنيات تتبع مماثلة.
+        </div>
+        <p style="margin-top:10px;">
+          التطبيق يعمل على منصات Android و iOS ولا يستخدم متصفح ويب داخلي بشكل افتراضي.
+          أي روابط خارجية تفتحها تخضع لسياسات الخصوصية الخاصة بتلك المواقع.
+        </p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="ar-8">
+      <div class="section-header">
+        <span class="section-icon">🔄</span>
+        <span class="section-title">٨. التغييرات على هذه السياسة</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>
+          قد نُحدّث هذه السياسة بصفة دورية. سنُعلمك بأي تغييرات جوهرية عبر إشعار داخل التطبيق
+          أو عند إعادة تشغيله. تاريخ سريان التحديث مُثبَّت في أعلى هذه الصفحة.
+        </p>
+        <p style="margin-top:8px;">
+          استمرارك في استخدام التطبيق بعد نشر التغييرات يُعدّ قبولاً لها.
+        </p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="ar-9">
+      <div class="section-header">
+        <span class="section-icon">📧</span>
+        <span class="section-title">٩. التواصل معنا</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>لأي استفسارات تتعلق بهذه السياسة أو بياناتك الشخصية:</p>
+        <ul>
+          <li><strong>البريد الإلكتروني:</strong> privacy@ibostream.app</li>
+          <li><strong>الدعم الفني:</strong> support@ibostream.app</li>
+          <li><strong>المطوّر:</strong> AboHelme</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box">
+      <h3>هل لديك سؤال؟</h3>
+      <a href="mailto:privacy@ibostream.app">privacy@ibostream.app</a>
+      <p>نرد خلال 48 ساعة عمل</p>
+    </div>
+
+  </div><!-- /container -->
+</div><!-- /#ar -->
+
+
+<!-- ── ENGLISH VERSION ── -->
+<div id="en" lang="en" dir="ltr" style="display:none;">
+
+  <div class="hero" style="direction:ltr; text-align:center;">
+    <div class="hero-icon">🔏</div>
+    <h1>Privacy Policy<br><span class="app-name">IBO Stream</span></h1>
+    <p>We respect your privacy and are committed to protecting your personal data</p>
+    <span class="badge">Last updated: March 2025</span>
+  </div>
+
+  <div class="container" style="direction:ltr; text-align:left;">
+
+    <!-- TOC -->
+    <div class="toc" style="direction:ltr;">
+      <div class="toc-title">📋 Table of Contents</div>
+      <ol style="padding-left:20px; padding-right:0;">
+        <li><a href="#en-1">Information We Collect</a></li>
+        <li><a href="#en-2">How We Use Your Data</a></li>
+        <li><a href="#en-3">Data Storage & Security</a></li>
+        <li><a href="#en-4">Third-Party Data Sharing</a></li>
+        <li><a href="#en-5">Children's Privacy</a></li>
+        <li><a href="#en-6">Your Rights</a></li>
+        <li><a href="#en-7">Cookies & Tracking</a></li>
+        <li><a href="#en-8">Changes to This Policy</a></li>
+        <li><a href="#en-9">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <!-- Intro -->
+    <div class="highlight blue">
+      IBO Stream is a media player app supporting Xtream protocol and M3U files.
+      The app provides no built-in content. This policy explains how we collect,
+      use, and protect your data.
+    </div>
+
+    <!-- 1 -->
+    <div class="section" id="en-1" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">📊</span>
+        <span class="section-title">1. Information We Collect</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>We collect only the minimum data necessary to operate the app:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Device ID:</strong> Auto-generated upon app installation. Used solely for subscription verification. Contains no personally identifiable information.</li>
+          <li><strong>Phone number (optional):</strong> Voluntarily entered by the user to link their account to a subscription and facilitate account recovery.</li>
+          <li><strong>Watch history:</strong> Stored locally on your device only — never sent to our servers.</li>
+          <li><strong>Playlists:</strong> Stored locally on your device only — never uploaded to our servers.</li>
+        </ul>
+        <div class="highlight green">
+          ✅ We do NOT collect: name, email, location, contacts, or any other sensitive data.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section" id="en-2" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">🔍</span>
+        <span class="section-title">2. How We Use Your Data</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>We use collected data for the following purposes only:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Device ID:</strong> To verify subscription validity, prevent unauthorized use, and track the number of devices linked to each subscription.</li>
+          <li><strong>Phone number:</strong> For subscription-related communication only, and account activation when switching devices.</li>
+        </ul>
+        <div class="highlight warn">
+          ⚠️ We do NOT use your data for marketing, advertising, or analytics purposes.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="section" id="en-3" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">🔒</span>
+        <span class="section-title">3. Data Storage & Security</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Local data</strong> (watch history, playlists): Stored on your device using secure storage. Never leaves your device.</li>
+          <li><strong>Subscription data</strong> (Device ID, phone number): Stored on our HTTPS-secured, encrypted servers.</li>
+          <li>We retain your data as long as your account is active. You may request deletion at any time.</li>
+          <li>Uninstalling the app automatically deletes all local data.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="section" id="en-4" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">🤝</span>
+        <span class="section-title">4. Third-Party Data Sharing</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <div class="highlight green">
+          ✅ We do NOT sell, rent, or share your personal data with any third party for commercial purposes.
+        </div>
+        <p style="margin-top:12px;">We use the following technical services as part of our app infrastructure:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Expo / React Native:</strong> App framework — does not collect user data from our app.</li>
+          <li><strong>EAS (Expo Application Services):</strong> For over-the-air updates — does not collect personal data.</li>
+          <li><strong>Our own servers:</strong> For subscription verification only — secured and encrypted.</li>
+        </ul>
+        <p style="margin-top:12px;">We may disclose your data only if required by law or court order.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section" id="en-5" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">👶</span>
+        <span class="section-title">5. Children's Privacy</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>
+          Our app is not directed to children under 13 years of age and we do not knowingly collect
+          their data. If you are a parent or guardian and believe your child has provided us with
+          personal data, please contact us immediately at <strong>privacy@ibostream.app</strong>
+          and we will delete it within 48 hours.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section" id="en-6" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">✅</span>
+        <span class="section-title">6. Your Rights</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>You have the right at any time to:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Access:</strong> Know what personal data we hold about you.</li>
+          <li><strong>Rectification:</strong> Request correction of inaccurate data.</li>
+          <li><strong>Erasure:</strong> Request permanent deletion of all your personal data.</li>
+          <li><strong>Objection:</strong> Object to any processing of your data.</li>
+          <li><strong>Portability:</strong> Receive your data in a machine-readable format.</li>
+        </ul>
+        <p style="margin-top:10px;">To exercise any of these rights, contact us at: <strong>privacy@ibostream.app</strong></p>
+        <p>We commit to responding within <strong>48 business hours</strong>.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section" id="en-7" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">🍪</span>
+        <span class="section-title">7. Cookies & Tracking</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <div class="highlight green">
+          ✅ The app does not use cookies or similar tracking technologies.
+        </div>
+        <p style="margin-top:10px;">
+          The app runs on Android and iOS platforms and does not use an embedded web browser by default.
+          Any external links you open are subject to the privacy policies of those respective websites.
+        </p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="section" id="en-8" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">🔄</span>
+        <span class="section-title">8. Changes to This Policy</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>
+          We may update this policy periodically. We will notify you of any material changes through
+          an in-app notification or upon next launch. The effective date of any update is noted at
+          the top of this page.
+        </p>
+        <p style="margin-top:8px;">
+          Your continued use of the app after changes are posted constitutes your acceptance of those changes.
+        </p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="section" id="en-9" style="direction:ltr;">
+      <div class="section-header">
+        <span class="section-icon">📧</span>
+        <span class="section-title">9. Contact Us</span>
+      </div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>For any questions regarding this policy or your personal data:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Privacy:</strong> privacy@ibostream.app</li>
+          <li><strong>Support:</strong> support@ibostream.app</li>
+          <li><strong>Developer:</strong> AboHelme</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box" style="direction:ltr;">
+      <h3>Have a question?</h3>
+      <a href="mailto:privacy@ibostream.app">privacy@ibostream.app</a>
+      <p>We respond within 48 business hours</p>
+    </div>
+
+  </div><!-- /container -->
+</div><!-- /#en -->
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 <a href="#">IBO Stream</a> · Developed by AboHelme · All rights reserved</p>
+  <p style="margin-top:6px;">
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Use</a>
+  </p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('ar').style.display = lang === 'ar' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'ar') || (i === 1 && lang === 'en'));
+    });
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  }
+</script>
+
+</body>
+</html>

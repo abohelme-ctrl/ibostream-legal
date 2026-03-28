@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="IBO Stream Terms of Use - شروط استخدام تطبيق IBO Stream" />
+  <title>Terms of Use | شروط الاستخدام — IBO Stream</title>
+  <style>
+    :root {
+      --orange: #FF6B35;
+      --dark:   #0A0E27;
+      --card:   #1C2340;
+      --text:   #E8ECF0;
+      --sub:    #A0A8C0;
+      --border: rgba(255,255,255,0.08);
+      --blue:   #4A90E2;
+      --green:  #10B981;
+      --warn:   #F59E0B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI','Arial',sans-serif; background: var(--dark); color: var(--text); line-height: 1.7; font-size: 15px; }
+
+    .lang-bar {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,14,39,0.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 24px;
+    }
+    .lang-bar .brand { font-size: 16px; font-weight: 700; color: var(--orange); }
+    .lang-btns { display: flex; gap: 8px; }
+    .lang-btn {
+      padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border);
+      background: transparent; color: var(--sub); cursor: pointer;
+      font-size: 13px; font-weight: 600; transition: all .2s;
+    }
+    .lang-btn.active { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+    .hero {
+      background: linear-gradient(135deg, #0A0E27 0%, #151B3B 60%, #1C2340 100%);
+      text-align: center; padding: 60px 24px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-icon {
+      width: 80px; height: 80px; border-radius: 20px;
+      background: rgba(255,107,53,0.15); border: 2px solid var(--orange);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 36px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .hero .app-name { color: var(--orange); }
+    .hero p { color: var(--sub); font-size: 14px; margin-top: 6px; }
+    .hero .badge {
+      display: inline-block; margin-top: 16px;
+      background: rgba(16,185,129,0.12); border: 1px solid var(--green);
+      color: var(--green); border-radius: 20px; padding: 4px 14px; font-size: 13px;
+    }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    .toc {
+      background: var(--card); border-radius: 16px;
+      border: 1px solid var(--border); padding: 24px; margin-bottom: 32px;
+    }
+    .toc-title { font-size: 14px; font-weight: 700; color: var(--orange); margin-bottom: 14px; }
+    .toc ol { padding-right: 20px; padding-left: 0; }
+    .toc li { margin-bottom: 8px; }
+    .toc a { color: var(--blue); text-decoration: none; font-size: 14px; }
+    .toc a:hover { text-decoration: underline; }
+
+    .section {
+      background: var(--card); border-radius: 16px;
+      border: 1px solid var(--border); padding: 24px;
+      margin-bottom: 16px; scroll-margin-top: 80px;
+    }
+    .section-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+    .section-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .section-title { font-size: 16px; font-weight: 700; color: var(--orange); }
+    .divider { height: 1px; background: var(--border); margin: 12px 0; }
+    .section-body { color: var(--sub); font-size: 14px; line-height: 1.8; }
+    .section-body ul, .section-body ol { padding-right: 20px; padding-left: 0; margin-top: 8px; }
+    .section-body li { margin-bottom: 6px; }
+    .section-body strong { color: var(--text); }
+
+    .highlight {
+      border-radius: 10px; padding: 14px 16px; margin: 12px 0; font-size: 13px;
+    }
+    .highlight.green { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.3); color: #6ee7b7; }
+    .highlight.blue  { background: rgba(74,144,226,0.08); border: 1px solid rgba(74,144,226,0.3); color: #93c5fd; }
+    .highlight.warn  { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.3); color: #fcd34d; }
+    .highlight.red   { background: rgba(239,68,68,0.08);  border: 1px solid rgba(239,68,68,0.3);  color: #fca5a5; }
+
+    .contact-box {
+      background: linear-gradient(135deg, rgba(255,107,53,0.1), rgba(74,144,226,0.1));
+      border: 1px solid rgba(255,107,53,0.3); border-radius: 16px;
+      padding: 24px; text-align: center; margin-top: 32px;
+    }
+    .contact-box h3 { font-size: 16px; color: #fff; margin-bottom: 8px; }
+    .contact-box a { color: var(--orange); text-decoration: none; font-weight: 600; }
+    .contact-box p { color: var(--sub); font-size: 13px; margin-top: 6px; }
+
+    footer {
+      text-align: center; padding: 32px 24px;
+      border-top: 1px solid var(--border); color: var(--sub); font-size: 13px;
+    }
+    footer a { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero { padding: 40px 16px 32px; }
+      .hero h1 { font-size: 22px; }
+      .container { padding: 20px 16px 60px; }
+      .section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-bar">
+  <span class="brand">📺 IBO Stream</span>
+  <div class="lang-btns">
+    <button class="lang-btn active" onclick="setLang('ar')">🇸🇦 العربية</button>
+    <button class="lang-btn"       onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+</div>
+
+<!-- ── ARABIC ── -->
+<div id="ar" lang="ar" dir="rtl">
+  <div class="hero">
+    <div class="hero-icon">📄</div>
+    <h1>شروط الاستخدام<br><span class="app-name">IBO Stream</span></h1>
+    <p>يُرجى قراءة هذه الشروط بعناية قبل استخدام التطبيق</p>
+    <span class="badge">آخر تحديث: مارس ٢٠٢٥</span>
+  </div>
+
+  <div class="container">
+    <div class="toc">
+      <div class="toc-title">📋 فهرس المحتويات</div>
+      <ol>
+        <li><a href="#ar-t1">قبول الشروط</a></li>
+        <li><a href="#ar-t2">عن التطبيق</a></li>
+        <li><a href="#ar-t3">الأهلية للاستخدام</a></li>
+        <li><a href="#ar-t4">مسؤولية المستخدم عن المحتوى</a></li>
+        <li><a href="#ar-t5">الاستخدامات المحظورة</a></li>
+        <li><a href="#ar-t6">الملكية الفكرية</a></li>
+        <li><a href="#ar-t7">الاشتراك والدفع</a></li>
+        <li><a href="#ar-t8">إخلاء المسؤولية</a></li>
+        <li><a href="#ar-t9">تحديد المسؤولية</a></li>
+        <li><a href="#ar-t10">الإنهاء والتعليق</a></li>
+        <li><a href="#ar-t11">التعديلات على الشروط</a></li>
+        <li><a href="#ar-t12">التواصل معنا</a></li>
+      </ol>
+    </div>
+
+    <div class="highlight warn">
+      ⚠️ باستخدامك لتطبيق IBO Stream فإنك توافق على الالتزام بهذه الشروط كاملةً. إذا كنت لا توافق عليها، يُرجى إلغاء تثبيت التطبيق.
+    </div>
+
+    <div class="section" id="ar-t1">
+      <div class="section-header"><span class="section-icon">✍️</span><span class="section-title">١. قبول الشروط</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>باستخدامك لتطبيق IBO Stream أو تثبيته أو الوصول إليه، فإنك تُقرّ بأنك قرأت وفهمت ووافقت على هذه الشروط وعلى <a href="privacy-policy.html" style="color:var(--blue)">سياسة الخصوصية</a> المرفقة. تُشكّل هذه الشروط اتفاقية ملزمة قانونياً بينك وبين المطوّر.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t2">
+      <div class="section-header"><span class="section-icon">📺</span><span class="section-title">٢. عن التطبيق</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>IBO Stream هو تطبيق مشغّل وسائط متعدد الوظائف يدعم:</p>
+        <ul>
+          <li>ملفات M3U وقوائم التشغيل</li>
+          <li>بروتوكول Xtream Codes API</li>
+          <li>بث القنوات المباشرة والأفلام والمسلسلات</li>
+        </ul>
+        <div class="highlight green">✅ التطبيق لا يوفر أي محتوى مدمج أو روابط افتراضية. المستخدم هو من يُضيف مصادر المحتوى الخاصة به.</div>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t3">
+      <div class="section-header"><span class="section-icon">👤</span><span class="section-title">٣. الأهلية للاستخدام</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <ul>
+          <li>يجب أن يكون عمرك <strong>13 عاماً أو أكثر</strong> لاستخدام هذا التطبيق.</li>
+          <li>باستخدامك للتطبيق، فإنك تُقرّ بأنك مؤهل قانونياً للموافقة على هذه الشروط.</li>
+          <li>يجب أن يتوافق استخدامك مع قوانين وأنظمة بلدك.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t4">
+      <div class="section-header"><span class="section-icon">⚖️</span><span class="section-title">٤. مسؤولية المستخدم عن المحتوى</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <div class="highlight red">أنت المسؤول الوحيد والحصري عن مشروعية المحتوى الذي تشاهده أو تبثّه عبر هذا التطبيق.</div>
+        <ul style="margin-top:12px;">
+          <li>يجب أن تمتلك الحق القانوني أو الإذن اللازم من مالك حقوق المحتوى.</li>
+          <li>يحظر مشاهدة أو بث أي محتوى محمي بحقوق الطبع والنشر دون إذن صريح.</li>
+          <li>لا يتحمل المطور أي مسؤولية قانونية أو مدنية أو جنائية ناتجة عن استخدامك للمحتوى.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t5">
+      <div class="section-header"><span class="section-icon">🚫</span><span class="section-title">٥. الاستخدامات المحظورة</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>يُحظر تحديداً:</p>
+        <ul>
+          <li>الوصول إلى محتوى محمي بحقوق الطبع والنشر دون إذن قانوني</li>
+          <li>بيع أو توزيع بيانات اعتماد الاشتراك (credentials) لأطراف أخرى</li>
+          <li>استخدام التطبيق لأغراض تجارية دون إذن كتابي مسبق</li>
+          <li>نشر أو توزيع روابط لمحتوى غير مشروع</li>
+          <li>محاولة اختراق أو تعطيل التطبيق أو خوادمه</li>
+          <li>عكس هندسة (Reverse Engineering) التطبيق أو كوده</li>
+          <li>إنشاء أكثر من عدد الأجهزة المسموح به في خطة اشتراكك</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t6">
+      <div class="section-header"><span class="section-icon">©️</span><span class="section-title">٦. الملكية الفكرية</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>جميع حقوق التطبيق — بما تشمل التصميم والكود المصدري والعلامة التجارية والشعار — محفوظة لـ <strong>AboHelme</strong>. لا يمنحك استخدام التطبيق أي حقوق ملكية فيه.</p>
+        <ul style="margin-top:10px;">
+          <li>يُحظر نسخ أو توزيع أو تعديل أي جزء من التطبيق دون إذن كتابي صريح.</li>
+          <li>يُحظر استخدام اسم أو شعار IBO Stream لأغراض تجارية.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t7">
+      <div class="section-header"><span class="section-icon">💳</span><span class="section-title">٧. الاشتراك والدفع</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <ul>
+          <li><strong>الفترة التجريبية:</strong> 30 يوماً مجانية من تاريخ أول تثبيت.</li>
+          <li><strong>الاشتراك المدفوع:</strong> مطلوب بعد انتهاء الفترة التجريبية للاستمرار في الاستخدام.</li>
+          <li><strong>سياسة الاسترداد:</strong> رسوم الاشتراك غير قابلة للاسترداد بعد بدء الاستخدام الفعلي.</li>
+          <li><strong>تغيير الأسعار:</strong> نحتفظ بحق تعديل أسعار الاشتراك مع إشعار مسبق لا يقل عن 7 أيام.</li>
+          <li><strong>حد الأجهزة:</strong> كل خطة اشتراك تسمح بعدد محدد من الأجهزة وفق الباقة المختارة.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t8">
+      <div class="section-header"><span class="section-icon">⚠️</span><span class="section-title">٨. إخلاء المسؤولية</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>يُقدَّم التطبيق <strong>"كما هو"</strong> دون أي ضمانات صريحة أو ضمنية. لا يضمن المطور:</p>
+        <ul>
+          <li>استمرارية الخدمة أو توافرها في جميع الأوقات</li>
+          <li>خلوّ التطبيق من الأخطاء أو المشكلات التقنية</li>
+          <li>توافق التطبيق مع جميع الأجهزة والأنظمة</li>
+          <li>جودة أو استمرارية أي محتوى تبثّه عبر مصادرك الخاصة</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t9">
+      <div class="section-header"><span class="section-icon">🛡️</span><span class="section-title">٩. تحديد المسؤولية</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>في أقصى حد يسمح به القانون، لن يكون المطور مسؤولاً عن:</p>
+        <ul>
+          <li>أي خسائر مباشرة أو غير مباشرة ناتجة عن استخدام التطبيق</li>
+          <li>أي محتوى يتم الوصول إليه عبر التطبيق</li>
+          <li>أي انتهاك لحقوق الطبع والنشر يرتكبه المستخدم</li>
+          <li>أي خسارة للبيانات ناتجة عن عطل تقني أو مشكلة في الجهاز</li>
+        </ul>
+        <p style="margin-top:10px;">الحد الأقصى لمسؤولية المطور في أي حال لا يتجاوز مبلغ الاشتراك المدفوع خلال الأشهر الثلاثة الأخيرة.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t10">
+      <div class="section-header"><span class="section-icon">🔚</span><span class="section-title">١٠. الإنهاء والتعليق</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>نحتفظ بحق تعليق أو إنهاء وصولك للتطبيق فوراً وبدون إشعار مسبق في حال:</p>
+        <ul>
+          <li>انتهاك أي من هذه الشروط</li>
+          <li>الاشتباه في الاحتيال أو الاستخدام غير المشروع</li>
+          <li>انتهاء فترة الاشتراك دون تجديد</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t11">
+      <div class="section-header"><span class="section-icon">🔄</span><span class="section-title">١١. التعديلات على الشروط</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <p>نحتفظ بحق تعديل هذه الشروط في أي وقت. سنُشعرك بالتغييرات الجوهرية عبر إشعار داخل التطبيق. استمرارك في الاستخدام بعد نشر التعديلات يُعدّ قبولاً منك لها.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ar-t12">
+      <div class="section-header"><span class="section-icon">📧</span><span class="section-title">١٢. التواصل معنا</span></div>
+      <div class="divider"></div>
+      <div class="section-body">
+        <ul>
+          <li><strong>البريد الإلكتروني:</strong> support@ibostream.app</li>
+          <li><strong>الخصوصية:</strong> privacy@ibostream.app</li>
+          <li><strong>المطوّر:</strong> AboHelme</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h3>هل لديك استفسار؟</h3>
+      <a href="mailto:support@ibostream.app">support@ibostream.app</a>
+      <p>نرد خلال 48 ساعة عمل</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── ENGLISH ── -->
+<div id="en" lang="en" dir="ltr" style="display:none;">
+  <div class="hero" style="direction:ltr;">
+    <div class="hero-icon">📄</div>
+    <h1>Terms of Use<br><span class="app-name">IBO Stream</span></h1>
+    <p>Please read these terms carefully before using the app</p>
+    <span class="badge">Last updated: March 2025</span>
+  </div>
+
+  <div class="container" style="direction:ltr; text-align:left;">
+    <div class="toc" style="direction:ltr;">
+      <div class="toc-title">📋 Table of Contents</div>
+      <ol style="padding-left:20px; padding-right:0;">
+        <li><a href="#en-t1">Acceptance of Terms</a></li>
+        <li><a href="#en-t2">About the App</a></li>
+        <li><a href="#en-t3">User Eligibility</a></li>
+        <li><a href="#en-t4">User Content Responsibility</a></li>
+        <li><a href="#en-t5">Prohibited Uses</a></li>
+        <li><a href="#en-t6">Intellectual Property</a></li>
+        <li><a href="#en-t7">Subscription & Payment</a></li>
+        <li><a href="#en-t8">Disclaimer of Warranties</a></li>
+        <li><a href="#en-t9">Limitation of Liability</a></li>
+        <li><a href="#en-t10">Termination & Suspension</a></li>
+        <li><a href="#en-t11">Changes to Terms</a></li>
+        <li><a href="#en-t12">Contact Us</a></li>
+      </ol>
+    </div>
+
+    <div class="highlight warn">
+      ⚠️ By using IBO Stream you agree to be bound by these terms in full. If you do not agree, please uninstall the app.
+    </div>
+
+    <div class="section" id="en-t1" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">✍️</span><span class="section-title">1. Acceptance of Terms</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>By installing, accessing, or using IBO Stream, you acknowledge that you have read, understood, and agreed to these Terms and the accompanying <a href="privacy-policy.html" style="color:var(--blue)">Privacy Policy</a>. These Terms constitute a legally binding agreement between you and the developer.</p>
+      </div>
+    </div>
+
+    <div class="section" id="en-t2" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">📺</span><span class="section-title">2. About the App</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>IBO Stream is a multi-function media player supporting:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>M3U files and playlists</li>
+          <li>Xtream Codes API protocol</li>
+          <li>Live channels, movies, and series streaming</li>
+        </ul>
+        <div class="highlight green">✅ The app provides no built-in content or default links. Users add their own content sources.</div>
+      </div>
+    </div>
+
+    <div class="section" id="en-t3" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">👤</span><span class="section-title">3. User Eligibility</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>You must be <strong>at least 13 years old</strong> to use this app.</li>
+          <li>By using the app, you confirm you are legally qualified to enter this agreement.</li>
+          <li>Your use must comply with the laws and regulations of your country.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t4" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">⚖️</span><span class="section-title">4. User Content Responsibility</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <div class="highlight red">You are solely and exclusively responsible for the legality of content you view or stream through this app.</div>
+        <ul style="padding-left:20px; padding-right:0; margin-top:12px;">
+          <li>You must hold the legal right or necessary permission from the content rights owner.</li>
+          <li>Viewing or streaming copyrighted content without explicit permission is prohibited.</li>
+          <li>The developer bears no legal, civil, or criminal liability arising from your use of content.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t5" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">🚫</span><span class="section-title">5. Prohibited Uses</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>The following are expressly prohibited:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>Accessing copyrighted content without legal permission</li>
+          <li>Selling or distributing subscription credentials to third parties</li>
+          <li>Using the app for commercial purposes without prior written consent</li>
+          <li>Publishing or distributing links to unlawful content</li>
+          <li>Attempting to hack or disrupt the app or its servers</li>
+          <li>Reverse engineering or decompiling the app or its code</li>
+          <li>Exceeding the device limit allowed by your subscription plan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t6" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">©️</span><span class="section-title">6. Intellectual Property</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>All rights to the app — including design, source code, brand, and logo — are reserved by <strong>AboHelme</strong>. Use of the app does not grant you any ownership rights.</p>
+        <ul style="padding-left:20px; padding-right:0; margin-top:10px;">
+          <li>Copying, distributing, or modifying any part of the app without explicit written permission is prohibited.</li>
+          <li>Using the IBO Stream name or logo for commercial purposes is prohibited.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t7" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">💳</span><span class="section-title">7. Subscription & Payment</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Free Trial:</strong> 30 days from first installation date.</li>
+          <li><strong>Paid Subscription:</strong> Required after the trial period ends to continue using the app.</li>
+          <li><strong>Refund Policy:</strong> Subscription fees are non-refundable after actual use begins.</li>
+          <li><strong>Price Changes:</strong> We reserve the right to modify subscription prices with at least 7 days' prior notice.</li>
+          <li><strong>Device Limit:</strong> Each subscription plan allows a specific number of devices as defined by the selected plan.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t8" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">⚠️</span><span class="section-title">8. Disclaimer of Warranties</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>The app is provided <strong>"as is"</strong> without warranties of any kind. The developer does not warrant:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>Continuity or availability of the service at all times</li>
+          <li>Freedom from errors or technical issues</li>
+          <li>Compatibility with all devices and operating systems</li>
+          <li>Quality or continuity of any content streamed from your own sources</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t9" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">🛡️</span><span class="section-title">9. Limitation of Liability</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>To the maximum extent permitted by law, the developer will not be liable for:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>Any direct or indirect losses resulting from use of the app</li>
+          <li>Any content accessed through the app</li>
+          <li>Any copyright infringement committed by the user</li>
+          <li>Any data loss resulting from technical failure or device issues</li>
+        </ul>
+        <p style="margin-top:10px;">The developer's maximum liability shall not exceed the subscription amount paid in the preceding three months.</p>
+      </div>
+    </div>
+
+    <div class="section" id="en-t10" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">🔚</span><span class="section-title">10. Termination & Suspension</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>We reserve the right to suspend or terminate your access immediately and without prior notice if:</p>
+        <ul style="padding-left:20px; padding-right:0;">
+          <li>Any of these terms are violated</li>
+          <li>Fraud or unlawful use is suspected</li>
+          <li>Subscription period ends without renewal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="en-t11" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">🔄</span><span class="section-title">11. Changes to Terms</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <p>We reserve the right to modify these terms at any time. We will notify you of material changes through an in-app notification. Your continued use after changes are posted constitutes acceptance of the updated terms.</p>
+      </div>
+    </div>
+
+    <div class="section" id="en-t12" style="direction:ltr;">
+      <div class="section-header"><span class="section-icon">📧</span><span class="section-title">12. Contact Us</span></div>
+      <div class="divider"></div>
+      <div class="section-body" style="direction:ltr;">
+        <ul style="padding-left:20px; padding-right:0;">
+          <li><strong>Support:</strong> support@ibostream.app</li>
+          <li><strong>Privacy:</strong> privacy@ibostream.app</li>
+          <li><strong>Developer:</strong> AboHelme</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-box" style="direction:ltr;">
+      <h3>Have a question?</h3>
+      <a href="mailto:support@ibostream.app">support@ibostream.app</a>
+      <p>We respond within 48 business hours</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 <a href="#">IBO Stream</a> · Developed by AboHelme · All rights reserved</p>
+  <p style="margin-top:6px;">
+    <a href="privacy-policy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Use</a>
+  </p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('ar').style.display = lang === 'ar' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.querySelectorAll('.lang-btn').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'ar') || (i === 1 && lang === 'en'));
+    });
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  }
+</script>
+</body>
+</html>
