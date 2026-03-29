@@ -3,10 +3,488 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="0; url=privacy-policy.html" />
-  <title>IBO Stream — Legal</title>
+  <title>IBO Stream — مشغّل M3U الاحترافي</title>
+  <meta name="description" content="IBO Stream — مشغّل M3U وXtream الاحترافي. قنوات مباشرة، أفلام، مسلسلات من قوائمك الخاصة." />
+  <meta property="og:title" content="IBO Stream — M3U & Media Player" />
+  <meta property="og:description" content="مشغّل M3U احترافي — قنوات مباشرة، أفلام، مسلسلات" />
+  <meta property="og:image" content="https://ibostream.app/logo.png" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:    #1565C0;
+      --blue2:   #1E88E5;
+      --orange:  #FF6B35;
+      --orange2: #FF8C00;
+      --dark:    #0D1B2A;
+      --dark2:   #112240;
+      --white:   #FFFFFF;
+      --gray:    #F5F7FA;
+      --text:    #1a1a2e;
+      --muted:   #64748b;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Cairo', 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 40px;
+      background: rgba(13, 27, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none;
+    }
+    .nav-logo img { width: 38px; height: 38px; border-radius: 10px; }
+    .nav-logo span {
+      font-size: 1.2rem; font-weight: 700; color: var(--white);
+      letter-spacing: -0.3px;
+    }
+    .nav-logo span em { color: var(--orange); font-style: normal; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.75); text-decoration: none;
+      font-size: 0.95rem; font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark2) 50%, #0a2a5e 100%);
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 100px 20px 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(30,136,229,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(255,107,53,0.12) 0%, transparent 60%);
+    }
+    .hero-content { position: relative; max-width: 760px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,107,53,0.15);
+      border: 1px solid rgba(255,107,53,0.4);
+      color: var(--orange);
+      padding: 6px 16px; border-radius: 50px;
+      font-size: 0.85rem; font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .hero-badge::before { content: '●'; font-size: 0.6rem; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    .hero-logo {
+      width: 130px; height: 130px;
+      border-radius: 28px;
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.1),
+        0 20px 60px rgba(0,0,0,0.5),
+        0 0 80px rgba(30,136,229,0.2);
+      margin: 0 auto 28px;
+      display: block;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100%{ transform: translateY(0); }
+      50%{ transform: translateY(-10px); }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+    .hero h1 span { color: var(--orange); }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 40px;
+      line-height: 1.7;
+    }
+    .hero-sub strong { color: var(--blue2); }
+
+    /* Google Play Button */
+    .download-section {
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .download-label {
+      font-size: 0.85rem; color: rgba(255,255,255,0.45);
+      text-transform: uppercase; letter-spacing: 1.5px;
+    }
+    .google-play-btn {
+      display: inline-block;
+      transition: transform 0.25s, filter 0.25s;
+      cursor: pointer;
+    }
+    .google-play-btn:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+    .google-play-btn img {
+      height: 64px;
+      width: auto;
+    }
+    .coming-soon-note {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 4px;
+    }
+
+    /* Stats Row */
+    .hero-stats {
+      display: flex; justify-content: center; gap: 48px;
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      display: block;
+      font-size: 1.9rem; font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+    .stat-num span { color: var(--orange); }
+    .stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    /* ── FEATURES ── */
+    .features {
+      padding: 100px 20px;
+      background: var(--gray);
+    }
+    .section-header { text-align: center; margin-bottom: 64px; }
+    .section-tag {
+      display: inline-block;
+      background: rgba(21,101,192,0.1);
+      color: var(--blue);
+      padding: 5px 16px; border-radius: 50px;
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .section-title span { color: var(--blue); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .feature-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px 28px;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+    .feature-icon {
+      width: 54px; height: 54px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+    .icon-blue  { background: rgba(21,101,192,0.1); }
+    .icon-orange{ background: rgba(255,107,53,0.1); }
+    .icon-green { background: rgba(34,197,94,0.1); }
+    .icon-purple{ background: rgba(139,92,246,0.1); }
+    .icon-teal  { background: rgba(20,184,166,0.1); }
+    .icon-yellow{ background: rgba(234,179,8,0.1); }
+
+    .feature-title {
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .feature-desc {
+      font-size: 0.9rem; color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how-it-works {
+      padding: 100px 20px;
+      background: var(--white);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .step { position: relative; }
+    .step-num {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color: var(--white);
+      font-size: 1.3rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      box-shadow: 0 8px 24px rgba(21,101,192,0.3);
+    }
+    .step-title {
+      font-size: 1rem; font-weight: 700;
+      color: var(--text); margin-bottom: 8px;
+    }
+    .step-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── CTA ── */
+    .cta-section {
+      padding: 100px 20px;
+      background: linear-gradient(135deg, var(--dark) 0%, #0a2a5e 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(30,136,229,0.15) 0%, transparent 70%);
+    }
+    .cta-content { position: relative; max-width: 600px; margin: 0 auto; }
+    .cta-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 900; color: var(--white);
+      margin-bottom: 16px;
+    }
+    .cta-section h2 span { color: var(--orange); }
+    .cta-section p {
+      font-size: 1.05rem; color: rgba(255,255,255,0.6);
+      margin-bottom: 40px; line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    footer a:hover { color: var(--white); }
+    .footer-links {
+      display: flex; justify-content: center; gap: 28px;
+      margin-bottom: 14px; flex-wrap: wrap;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      nav { padding: 12px 20px; }
+      .nav-links { display: none; }
+      .hero-stats { gap: 24px; }
+      .hero-stats .stat-num { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to <a href="privacy-policy.html">Privacy Policy</a>...</p>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="IBO Stream" />
+      <span>IBO <em>Stream</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">المميزات</a></li>
+      <li><a href="#how">كيف يعمل</a></li>
+      <li><a href="privacy-policy.html">الخصوصية</a></li>
+      <li><a href="terms.html">الشروط</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="hero-badge">تطبيق مجاني — متاح قريباً على Google Play</div>
+
+      <img src="logo.png" alt="IBO Stream Logo" class="hero-logo" />
+
+      <h1>IBO <span>Stream</span></h1>
+      <p class="hero-sub">
+        مشغّل الوسائط الشخصي الأفضل لقوائم <strong>M3U</strong> و<strong>Xtream API</strong><br/>
+        قنوات مباشرة، أفلام، مسلسلات — كل شيء في مكان واحد
+      </p>
+
+      <div class="download-section">
+        <span class="download-label">حمّل التطبيق</span>
+        <!-- Google Play Badge — سيُضاف الرابط بعد نشر التطبيق -->
+        <a href="#" class="google-play-btn" title="قريباً على Google Play">
+          <img
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/ar_badge_web_generic.png"
+            alt="احصل عليه من Google Play"
+          />
+        </a>
+        <span class="coming-soon-note">* الرابط سيكون متاحاً فور الموافقة على النشر</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">M3U<span>+</span></span>
+          <span class="stat-label">دعم كامل</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Xtream<span></span></span>
+          <span class="stat-label">API مدعوم</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0<span>$</span></span>
+          <span class="stat-label">مجاني تماماً</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">AR<span>/EN</span></span>
+          <span class="stat-label">عربي وإنجليزي</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <div class="section-tag">المميزات</div>
+      <h2 class="section-title">كل ما تحتاجه في <span>مشغّل واحد</span></h2>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon icon-blue">📡</div>
+        <div class="feature-title">دعم M3U وXtream API</div>
+        <div class="feature-desc">أضف قوائم تشغيل M3U الخاصة بك أو اتصل بخوادم Xtream API مباشرة. تحديث تلقائي كل 6 ساعات.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-orange">📺</div>
+        <div class="feature-title">قنوات مباشرة منظّمة</div>
+        <div class="feature-desc">تصفّح قنواتك المنظّمة في فئات مع بحث سريع وفلترة متقدم وقائمة مفضلة لسهولة الوصول.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">🎬</div>
+        <div class="feature-title">أفلام ومسلسلات VOD</div>
+        <div class="feature-desc">مكتبة VOD كاملة منظّمة بالفئات. تابع من حيث توقفت مع حفظ موضع المشاهدة تلقائياً.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-green">🎮</div>
+        <div class="feature-title">مشغّل فيديو احترافي</div>
+        <div class="feature-desc">مشغّل عالي الأداء مع تخطي 10 ثوانٍ، وضع الصورة داخل صورة، ودعم Android TV.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-teal">🌙</div>
+        <div class="feature-title">واجهة أنيقة</div>
+        <div class="feature-desc">تصميم داكن احترافي مع دعم كامل للغة العربية والإنجليزية. سهل الاستخدام للجميع.</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon icon-yellow">🔒</div>
+        <div class="feature-title">الخصوصية أولاً</div>
+        <div class="feature-desc">بياناتك محفوظة محلياً على جهازك فقط. لا نجمع بيانات شخصية. لا إعلانات إطلاقاً.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works" id="how">
+    <div class="section-header">
+      <div class="section-tag">كيف يعمل</div>
+      <h2 class="section-title">ابدأ في <span>3 خطوات</span></h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-title">حمّل التطبيق</div>
+        <div class="step-desc">نزّل IBO Stream مجاناً من Google Play على جهازك Android.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-title">أضف قائمتك</div>
+        <div class="step-desc">أضف رابط M3U أو بيانات Xtream API الخاصة بك بضغطة واحدة.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-title">استمتع بالمشاهدة</div>
+        <div class="step-desc">شاهد قنواتك وأفلامك ومسلسلاتك بجودة عالية وبدون تعقيد.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>جاهز للبدء؟ <span>حمّل مجاناً</span></h2>
+      <p>انضم إلى آلاف المستخدمين واستمتع بتجربة مشاهدة احترافية على هاتفك.</p>
+
+      <a href="#" class="google-play-btn" title="قريباً على Google Play">
+        <img
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/ar_badge_web_generic.png"
+          alt="احصل عليه من Google Play"
+        />
+      </a>
+      <br/>
+      <span class="coming-soon-note" style="color:rgba(255,255,255,0.3)">* قريباً على Google Play</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="privacy-policy.html">سياسة الخصوصية</a>
+      <a href="terms.html">شروط الاستخدام</a>
+      <a href="mailto:support@ibostream.app">support@ibostream.app</a>
+    </div>
+    <p>© 2026 IBO Stream. جميع الحقوق محفوظة.</p>
+    <p style="margin-top:6px; font-size:0.78rem; color:rgba(255,255,255,0.25)">
+      IBO Stream هو مشغّل وسائط شخصي فقط ولا يوفر أي محتوى.
+    </p>
+  </footer>
+
 </body>
 </html>

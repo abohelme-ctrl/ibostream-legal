@@ -1,179 +1,161 @@
-# Google Play Store Listing — IBO Stream
-# محتوى صفحة Google Play — IBO Stream
+# Store Listing — IBO Stream
+# محتوى صفحة المتجر — IBO Stream
 
 ---
 
-## APP NAME (اسم التطبيق)
-**Short (30 chars max):**
-IBO Stream — IPTV Player
+## 🚫 كلمات تضر بالموافقة — تجنّبها تماماً
+
+| الكلمة | السبب |
+|--------|-------|
+| IPTV | مرتبطة بمحتوى مسروق في نظر Google/Apple |
+| Free Channels | توحي بتوفير محتوى مجاناً |
+| Free Movies | نفس السبب |
+| Live TV | قد تُفهم كمنافسة لخدمات مرخّصة |
+| Watch TV Online | توحي بمحتوى بث غير مرخّص |
+| Cracked / Unlocked | محظورة تماماً |
+| Unlimited Channels | توحي بتوفير محتوى |
+
+---
+
+## ✅ كلمات تساعد على الموافقة — استخدمها دائماً
+
+| الكلمة | لماذا جيدة |
+|--------|-----------|
+| M3U Player | تقني ومحايد — مجرد صيغة ملف |
+| Media Player | مصطلح مقبول تماماً |
+| Playlist Manager | إدارة قوائم تشغيل — محايد |
+| Xtream API | تقني ومحايد |
+| Personal Media | يؤكد أنه للاستخدام الشخصي |
+| Video Streaming | مقبول إذا كان مع disclaimer |
+| VOD Player | Video On Demand — مقبول |
+| Multimedia Player | مصطلح آمن |
+| Stream your content | يؤكد أن المحتوى للمستخدم نفسه |
+| Bring Your Own Playlist | يوضح أن التطبيق لا يوفر محتوى |
+
+---
+
+---
+# ══════════════════════════════
+# 🤖 GOOGLE PLAY STORE
+# ══════════════════════════════
+---
+
+## APP NAME — اسم التطبيق (50 chars max)
+```
+IBO Stream — M3U & Media Player
+```
 
 ---
 
 ## SHORT DESCRIPTION — الوصف المختصر (80 chars max)
 
 **العربية:**
-مشغّل IPTV احترافي يدعم M3U وXtream — قنوات، أفلام، مسلسلات
+```
+مشغّل M3U احترافي — قنوات مباشرة، أفلام، مسلسلات من قوائمك الخاصة
+```
 
 **English:**
-Professional IPTV player supporting M3U & Xtream — Live, Movies, Series
+```
+Professional M3U & Xtream media player — Live, Movies, Series from your playlists
+```
 
 ---
 
 ## FULL DESCRIPTION — الوصف الكامل
 
-### العربية (Arabic):
-
+### العربية:
 ```
-📺 IBO Stream — مشغّل IPTV الأفضل لك
+📺 IBO Stream — مشغّل الوسائط الشخصي الأفضل
 
-هل تبحث عن مشغّل IPTV سريع وموثوق وسهل الاستخدام؟
-IBO Stream هو الحل الأمثل لمشاهدة قنواتك المفضلة والأفلام والمسلسلات من أي مكان.
+هل تملك قائمة تشغيل M3U أو اشتراكاً في خدمة بث؟
+IBO Stream هو مشغّل الوسائط المثالي لتشغيل محتواك الشخصي.
 
 ✨ المميزات الرئيسية:
 
-📡 دعم M3U وXtream Codes
-• أضف قوائم تشغيل M3U بسهولة
-• اتصل بخوادم Xtream Codes مباشرة
-• تحديث تلقائي كل 6 ساعات
+📡 دعم M3U وXtream API
+• شغّل قوائم تشغيل M3U الخاصة بك بسهولة
+• اتصل بخوادم Xtream API مباشرة
+• تحديث تلقائي كل 6 ساعات لقوائمك
 
 📺 قنوات مباشرة
-• تصفّح آلاف القنوات المنظّمة في فئات
+• تصفّح محتواك المنظّم في فئات
 • بحث سريع وفلترة متقدم
-• قائمة المفضلة
+• قائمة المفضلة لسهولة الوصول
 
 🎬 أفلام ومسلسلات
-• مكتبة ضخمة منظّمة بالفئات والتقييمات
+• مكتبة VOD منظّمة بالفئات
 • متابعة ما شاهدته مع حفظ موضع المشاهدة
-• مؤشرات التقدم في المشاهدة
+• مؤشرات التقدم في المتابعة
 
-🎮 تحكم احترافي
-• مشغّل فيديو عالي الجودة
-• تخطي للأمام/للخلف 10 ثوانٍ
+🎮 مشغّل وسائط احترافي
+• مشغّل فيديو عالي الجودة والأداء
+• تخطي 10 ثوانٍ للأمام/للخلف
 • وضع الصورة داخل صورة (PIP)
 • دعم أجهزة Android TV
 
-🌙 تصميم أنيق
+🌙 تصميم أنيق وسهل الاستخدام
 • واجهة داكنة احترافية
 • دعم اللغة العربية والإنجليزية
-• تحكم بحجم الواجهة
+• تحكم كامل بالواجهة
 
 🔒 الخصوصية أولاً
-• بياناتك محفوظة محلياً على جهازك فقط
-• لا نجمع بيانات شخصية
-• لا إعلانات
+• بياناتك ومحتواك محفوظان محلياً على جهازك فقط
+• لا نجمع أي بيانات شخصية
+• لا إعلانات إطلاقاً
 
----
-ملاحظة: IBO Stream هو مشغّل وسائط فقط. المستخدم مسؤول عن مشروعية المحتوى الذي يشاهده.
+⚠️ تنبيه مهم:
+IBO Stream هو مشغّل وسائط شخصي فقط.
+التطبيق لا يوفر أي محتوى أو قنوات.
+المستخدم مسؤول بالكامل عن قوائم التشغيل التي يضيفها
+ومدى مشروعيتها في بلده.
 ```
 
 ### English:
-
 ```
-📺 IBO Stream — The Ultimate IPTV Player
+📺 IBO Stream — Your Personal Media Player
 
-Looking for a fast, reliable, and easy-to-use IPTV player?
-IBO Stream is your perfect solution for watching your favorite channels, movies, and series from anywhere.
+Have an M3U playlist or a streaming service subscription?
+IBO Stream is the perfect media player to enjoy your personal content.
 
 ✨ Key Features:
 
-📡 M3U & Xtream Codes Support
-• Add M3U playlists with ease
-• Connect directly to Xtream Codes servers
+📡 M3U & Xtream API Support
+• Play your own M3U playlists with ease
+• Connect directly to your Xtream API service
 • Automatic refresh every 6 hours
 
 📺 Live Channels
-• Browse thousands of channels organized by category
+• Browse your content organized by category
 • Fast search and advanced filtering
-• Favorites list
+• Favorites list for quick access
 
-🎬 Movies & Series
-• Huge library organized by categories and ratings
-• Continue watching with position saved
-• Progress indicators on series episodes
+🎬 VOD — Movies & Series
+• Full VOD library organized by category
+• Continue watching with saved position
+• Episode progress indicators
 
-🎮 Professional Controls
-• High-quality video player
+🎮 Professional Media Player
+• High-performance video player
 • Skip forward/backward 10 seconds
 • Picture-in-Picture (PIP) mode
-• Android TV support with D-pad navigation
+• Android TV & D-pad navigation support
 
-🌙 Beautiful Design
+🌙 Beautiful & Easy to Use
 • Professional dark UI
 • Arabic and English language support
-• Adjustable UI scale
+• Fully customizable interface
 
 🔒 Privacy First
-• Your data stored locally on your device only
+• Your data and content stored locally only
 • No personal data collected
-• No ads
+• Zero ads
 
----
-Note: IBO Stream is a media player only. Users are responsible for the legality of content they stream.
+⚠️ Important Notice:
+IBO Stream is a personal media player only.
+This app does NOT provide any content, channels, or streams.
+Users are solely responsible for the playlists they add
+and their legality in their respective country.
 ```
-
----
-
-## CONTENT RATING QUESTIONNAIRE — استبيان تصنيف المحتوى
-
-**في Google Play Console → App Content → Rating:**
-
-اختر هذه الإجابات:
-
-| السؤال | الإجابة |
-|--------|---------|
-| Does your app contain violence? | No |
-| Does your app contain sexual content? | No |
-| Does your app contain profanity? | No |
-| Does your app contain drug references? | No |
-| Does your app simulate gambling? | No |
-| Does your app contain user-generated content? | No |
-| Does your app share location? | No |
-
-**النتيجة المتوقعة: PEGI 3 / Everyone**
-
----
-
-## DATA SAFETY FORM — نموذج أمان البيانات
-
-**في Google Play Console → App Content → Data Safety:**
-
-### Data Collection:
-| Data Type | Collected? | Shared? | Purpose |
-|-----------|-----------|---------|---------|
-| Device ID | Yes | No | App functionality / Subscription verification |
-| Phone number | Yes (optional) | No | Account management |
-| Watch history | No (local only) | No | — |
-| Playlists | No (local only) | No | — |
-| Name | No | No | — |
-| Email | No | No | — |
-| Location | No | No | — |
-| Photos | No | No | — |
-
-### Security:
-- ✅ Data is encrypted in transit (HTTPS)
-- ✅ Users can request data deletion
-- ✅ App follows Google Play Families Policy
-
----
-
-## SCREENSHOTS REQUIRED — لقطات الشاشة المطلوبة
-
-### Phone (required — الهاتف مطلوب):
-1. الشاشة الرئيسية (Home Screen) — مع قنوات وأفلام
-2. شاشة القنوات المباشرة مع الفئات
-3. شاشة الأفلام / المسلسلات
-4. شاشة المشغّل أثناء التشغيل
-5. شاشة الإعدادات
-
-**المقاس:** 1080×1920 px minimum (9:16)
-**الصيغة:** PNG أو JPEG
-**العدد:** 2 على الأقل، 8 كحد أقصى
-
-### 7-inch Tablet (optional):
-نفس اللقطات بمقاس 1200×1920
-
-### 10-inch Tablet (optional):
-نفس اللقطات بمقاس 1920×1200
 
 ---
 
@@ -182,19 +164,161 @@ Note: IBO Stream is a media player only. Users are responsible for the legality 
 | الحقل | القيمة |
 |-------|--------|
 | Category | Video Players & Editors |
-| Tags | iptv, m3u, streaming, video player, xtream |
+| Tags | m3u player, media player, video player, xtream, playlist manager |
+| Content Rating | Everyone (PEGI 3) |
+| Price | Free |
 | Contact Email | support@ibostream.app |
-| Privacy Policy URL | https://abohelme-ctrl.github.io/my-strapi/privacy-policy.html |
+| Privacy Policy | https://ibostream.app/privacy-policy.html |
 
 ---
 
-## PRICING — السعر
-Free (with in-app subscription after 30-day trial)
+## CONTENT RATING QUESTIONNAIRE
+
+| السؤال | الإجابة |
+|--------|---------|
+| Violence? | No |
+| Sexual content? | No |
+| Profanity? | No |
+| Drug references? | No |
+| Gambling? | No |
+| User-generated content? | No |
+| Share location? | No |
+
+**النتيجة: Everyone / PEGI 3** ✅
 
 ---
 
-## RELEASE TYPE — نوع الإصدار
-Production → Full rollout (100%)
-أو ابدأ بـ 20% ثم أكمل
+## DATA SAFETY FORM
+
+| Data Type | Collected? | Shared? | Purpose |
+|-----------|-----------|---------|---------|
+| Device ID | Yes | No | App functionality |
+| Watch history | No (local only) | No | — |
+| Playlists | No (local only) | No | — |
+| Name / Email / Phone | No | No | — |
+| Location | No | No | — |
+
+- ✅ Data encrypted in transit (HTTPS)
+- ✅ Users can request data deletion
+
+---
+---
+# ══════════════════════════════
+# 🍎 APPLE APP STORE
+# ══════════════════════════════
+---
+
+## APP NAME (30 chars max)
+```
+IBO Stream: M3U Player
+```
+
+## SUBTITLE (30 chars max)
+```
+Personal Media & Playlist Player
+```
+
+## KEYWORDS (100 chars — comma separated, no spaces after comma)
+```
+m3u,media player,playlist,video player,xtream,vod,stream,multimedia,live,series
+```
+> ⚠️ لا تضع: iptv, free tv, live tv channels — قد ترفض Apple التطبيق
+
+---
+
+## DESCRIPTION — الوصف (Apple — 4000 chars max)
+
+### English (Primary — مطلوب):
+```
+IBO Stream — Your Personal Media Player
+
+Bring your own M3U playlist or Xtream API subscription and enjoy
+a premium media playback experience on your iPhone or iPad.
+
+KEY FEATURES:
+
+▶ M3U & Xtream API
+Play your personal M3U playlists with full category organization.
+Connect to your Xtream API service with automatic 6-hour refresh.
+
+▶ Live & VOD Playback
+Browse live channels and VOD library (movies & series) from
+your personal playlist — organized by category with fast search.
+
+▶ Professional Video Player
+High-quality playback with 10-second skip,
+Picture-in-Picture support, and smooth performance.
+
+▶ Continue Watching
+Save your position in movies and series episodes automatically.
+Pick up exactly where you left off.
+
+▶ Favorites & Search
+Mark your favorite channels for quick access.
+Search across your entire playlist instantly.
+
+▶ Beautiful Interface
+Professional dark UI with full Arabic and English support.
+
+▶ Privacy First
+All your data stays on your device. No tracking. No ads.
+
+IMPORTANT NOTICE:
+IBO Stream is a personal media player only.
+This app does not provide, host, or distribute any content.
+Users must ensure their playlists comply with applicable laws.
+```
+
+### العربية (Arabic — اختياري لكن مفيد):
+```
+IBO Stream — مشغّل الوسائط الشخصي
+
+أضف قائمة تشغيل M3U الخاصة بك أو اشتراكك في Xtream API
+واستمتع بتجربة مشاهدة احترافية على iPhone وiPad.
+
+المميزات:
+• تشغيل قوائم M3U مع تنظيم الفئات
+• دعم Xtream API مع تحديث تلقائي
+• مكتبة VOD منظّمة (أفلام ومسلسلات)
+• متابعة من حيث توقفت
+• وضع الصورة داخل صورة
+• واجهة داكنة باللغتين العربية والإنجليزية
+• لا إعلانات — بياناتك محفوظة محلياً
+
+تنبيه: هذا التطبيق مشغّل وسائط فقط ولا يوفر أي محتوى.
+```
+
+---
+
+## Apple App Store — متطلبات إضافية
+
+| الحقل | القيمة |
+|-------|--------|
+| Category (Primary) | Entertainment |
+| Category (Secondary) | Utilities |
+| Age Rating | 4+ |
+| Price | Free (with In-App Purchase) |
+| Privacy Policy | https://ibostream.app/privacy-policy.html |
+| Support URL | https://ibostream.app |
+
+### Screenshots — Apple مطلوبة:
+| الجهاز | المقاس |
+|--------|--------|
+| iPhone 6.7" (مطلوب) | 1290×2796 px |
+| iPhone 6.5" (مطلوب) | 1242×2688 px |
+| iPad 12.9" (اختياري) | 2048×2732 px |
+
+---
+
+## SCREENSHOTS — مطلوبة لكلا المتجرين
+
+1. الشاشة الرئيسية — قنوات + أفلام
+2. شاشة القنوات المباشرة مع الفئات
+3. شاشة الأفلام / المسلسلات
+4. مشغّل الفيديو أثناء التشغيل
+5. شاشة إضافة قائمة تشغيل
+
+**Google Play:** 1080×1920 px (PNG/JPEG) — 2 إلى 8 صور
+**Apple App Store:** 1290×2796 px — 3 إلى 10 صور
 
 ---
