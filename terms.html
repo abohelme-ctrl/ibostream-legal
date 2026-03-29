@@ -27,8 +27,15 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 10px 24px;
     }
-    .lang-bar .brand { font-size: 16px; font-weight: 700; color: var(--orange); text-decoration: none; cursor: pointer; }
-    .lang-bar .brand:hover { opacity: 0.8; }
+    a.brand {
+      font-size: 16px; font-weight: 700;
+      color: var(--orange) !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      display: inline-flex; align-items: center;
+      transition: opacity 0.2s;
+    }
+    a.brand:hover { opacity: 0.75; }
     .lang-btns { display: flex; gap: 8px; }
     .lang-btn {
       padding: 5px 14px; border-radius: 20px; border: 1.5px solid var(--border);
